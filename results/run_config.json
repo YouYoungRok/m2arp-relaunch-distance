@@ -1,0 +1,31 @@
+{
+  "window": 10,
+  "embed_dim": 16,
+  "hidden_dim": 32,
+  "epochs": 30,
+  "lr": 0.02,
+  "n_days": 150,
+  "n_apps": 40,
+  "max_distance": 50,
+  "train_frac": 0.7,
+  "low_data_threshold": 6,
+  "cache_sizes": [
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+  ],
+  "seed": 0,
+  "trace_length": 11053,
+  "best_epoch": 8,
+  "best_val_smse": 77.15050328627967,
+  "baseline_val_smse": 113.7541810256476,
+  "lru_equivalence_check": true
+}
