@@ -1,18 +1,3 @@
-"""
-tests/test_torch_smoke.py
----------------------------
-lstm_torch.py에 대한 가벼운 동작 확인 테스트입니다.
-
-⚠️ 이 테스트는 Claude가 실행해본 적이 없습니다 (개발 샌드박스에 PyTorch가
-없었기 때문). NumPy 버전의 gradient check처럼 수학적으로 엄밀한 검증은
-아니고, "일단 에러 없이 돌아가고, 학습하면 손실이 실제로 줄어드는가"
-정도를 확인하는 최소한의 스모크 테스트입니다. 처음 실행해서 에러가 나면
-메시지를 그대로 알려주세요.
-
-실행 방법
-    pip install torch
-    python3 tests/test_torch_smoke.py
-"""
 import os
 import sys
 
