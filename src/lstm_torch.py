@@ -2,25 +2,8 @@
 lstm_torch.py
 -------------
 lstm_numpy.py와 동일한 역할(임베딩 -> LSTM -> 선형 회귀 head로 재실행 거리를
-예측)을 PyTorch로 다시 구현한 "선택적" 버전입니다.
+예측)을 PyTorch로 다시 구현한 버전입니다.
 
-⚠️ 매우 중요 — 반드시 읽어주세요
---------------------------------
-이 파일은 Claude가 실행해서 검증하지 **못한** 상태로 작성되었습니다.
-(코드를 작성한 샌드박스 환경 자체에 PyTorch가 설치되어 있지 않고, 그 환경은
-네트워크가 막혀 있어 설치도 불가능했습니다.) API 사용법 자체는 표준적이고
-안정적인 PyTorch 문법(nn.Embedding, nn.LSTM, nn.Linear, Adam)만 사용했지만,
-실제로 이 컴퓨터에서 처음 실행했을 때 사소한 오류가 날 가능성이 있습니다.
-그런 경우 에러 메시지를 그대로 붙여넣어 주시면 바로 고쳐드릴 수 있습니다.
-
-반대로 `lstm_numpy.py`는 (1) 수치미분 대비 gradient check, (2) 전체
-파이프라인 실행까지 이 환경에서 직접 확인을 마친 **검증된 기본 경로**입니다.
-이 파일은 "원 논문이 실제로 사용한 것과 더 가까운 스택(자동미분 기반
-LSTM)"을 보여주고 싶을 때 쓰는 선택적 대안입니다.
-
-인터페이스(predict, save, load, train_step)는 NumpyLSTMRegressor와 최대한
-동일하게 맞춰서, policies.py / trace_generator.py / relaunch.py / dataset.py는
-전혀 수정하지 않고 그대로 재사용할 수 있게 했습니다.
 """
 from __future__ import annotations
 
