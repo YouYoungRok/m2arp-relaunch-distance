@@ -1,0 +1,8 @@
+# 선택 사항: PyTorch 버전(lstm_torch.py, train_predictor_torch.py,
+# run_experiment_torch.py)을 쓰려는 경우에만 설치하면 됩니다.
+# 기본 경로(NumPy 버전)는 이 파일 없이 requirements.txt 만으로 충분합니다.
+#
+# 설치: pip install -r requirements-torch.txt
+# (본인 OS/CUDA 환경에 따라 https://pytorch.org/get-started/locally/ 의
+#  안내에 맞는 명령을 대신 사용해도 됩니다.)
+torch>=2.0
