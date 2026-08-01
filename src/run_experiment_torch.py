@@ -3,12 +3,8 @@ run_experiment_torch.py
 ------------------------
 run_experiment.py와 동일한 실험(트레이스 생성 -> 예측기 학습 -> 캐시 크기별
 LRU/Optimal/M2ARP 시뮬레이션)을, 예측기 부분만 PyTorch(lstm_torch.py)로
-바꿔서 수행하는 "선택적" 버전이다. 결과는 검증된 NumPy 버전의 결과를
+바꿔서 수행하는 버전이다. 결과는 검증된 NumPy 버전의 결과를
 덮어쓰지 않도록 results/torch/ 하위에 따로 저장한다.
-
-⚠️ README의 "PyTorch 버전(선택 사항)" 절을 먼저 읽어주세요 — 이 스크립트는
-Claude가 실행 환경 제약으로 직접 돌려보지 못한 상태입니다.
-
 실행 전: pip install torch pandas matplotlib
 """
 from __future__ import annotations
