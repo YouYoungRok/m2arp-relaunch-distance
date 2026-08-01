@@ -12,8 +12,6 @@ try:
     import torch.nn as nn
 except ImportError as e:  # pragma: no cover
     raise ImportError(
-        "lstm_torch.py를 쓰려면 먼저 PyTorch를 설치하세요: pip install torch\n"
-        "(https://pytorch.org/get-started/locally/ 에서 본인 환경에 맞는 설치 명령을 확인하세요.)"
     ) from e
 
 
